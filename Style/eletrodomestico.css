@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+:root{
+    --cor-principal: orange;
+    --cor-fundo: aliceblue;
+    --fonte-normal: 'Roboto';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-normal);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    background: none;
+    border: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--a-sa);
+}
+
+
+                        /* AQUI È O TOPO  !!!!!!!!*/
+header{
+    margin-top: 5vh;
+    align-self: center;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    box-shadow: 0px 0px 10px gray ;
+    width: 80vw;
+    border-radius: 10px;
+
+}
+.pessoal{
+    display: flex;
+    gap: 10px;
+    margin-right: 10vw;
+}
+.menuHamburger{
+    cursor: pointer;
+    margin-left: 10vw;
+}
+
+.colHamburger{
+    width: 20px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 4px;
+    display: block;
+}
+
+                /*AQUI É O MENU DE LINK*/
+.btndesaparecendo{
+    opacity: 0;
+}
+
+.menuLinks{
+    display: none;
+}
+.menuLinksAparecendo{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 0;
+    height: 100vh;
+    width: 20vw;
+    box-shadow: 0px 0px 10px gray;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.menuLinkTopo{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    width: max-content;
+    margin-top: 10vh;
+    gap: 20px;
+
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.cadastro{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5vh;
+}
+
+            /*AQUI É O CARRINHO VRUM VRUM*/
+
+.menuCarrinho{
+    display: none;
+}
+.menuCarrinhoAparecendo{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    box-shadow: 0px 0px 10px gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topoCarrinho{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+}
+#finalizarCompra{
+    margin-bottom: 5vh;
+    background-color: var(--cor-principal);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+                    /*AQUI É O MENU PERFIL*/
+.menuProfile{
+    display: none;
+}
+.menuProfileAparecendo{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: min-content;
+    height: min-content;
+    width: 25vw;
+    height: 50vh;
+    border-radius: 20px;
+    position: fixed;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px gray;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.botoesMenuProfile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputMenuProfile{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--cor-principal);
+}
+#loginMenuProfile{
+    width: 50%;
+    background-color: var(--cor-principal);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 10pt;
+}
+.topoMenuProfile{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.dadosMenuProfile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+
+
+/* Produto No Carrinho!!!!! */
+#conteinerCarrinho{
+    overflow-y: auto;
+    height: 500px;
+    box-shadow:2px 2px 10px  rgba(0, 0, 0, 0.452) inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    overflow-x: hidden;
+}
+.produtoNoaCarrinho{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 100px;
+    width: 80%;
+    align-items: center;
+    background-color: rgba(212, 212, 212, 0.384);
+    border-radius: 15px;
+    padding: 5px;
+    z-index: 1;
+}
+.numquantidadeprodutos{
+    color: var(--cor-principal);
+}
+.caracteristicas{
+    height: 100%;
+    display: flex;
+}
+.imgProdutoCarrinho{
+    height: 80%;
+}
+.infoProduto{
+    display: flex;
+    font-size: 15pt;
+    gap: 7px;
+}
+.botoesDoProdutoCarrinho{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btnsQuant{
+    cursor: pointer;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' #fff,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+#btnAbrirCarrinho{
+    display: flex;
+}
+
+
+
+
+            /*container dos Produtos*/
+            .filtros{
+                border-left: none;
+                position: sticky;
+                height: 70vh;
+                margin-top: 50px;
+                width: 20vw;
+            }
+            
+            .secaoProduto{
+                display: flex;
+                width: 80vw;
+                flex-direction: column;
+                
+                align-self: center;
+            }
+            .containerProdutos{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5vw;
+                margin-bottom: 60px;
+                margin-left: 10%;
+                
+            }
+            .titulos_filtros{
+                color: var(--cor-principal);
+            
+            }
+            .produto{
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                width: 10vw;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-right: 10px;
+            }
+            #titsec{
+                color: var(--cor-principal);
+                margin-top: 5vh;
+                cursor: pointer;
+            }
+            main{
+                display: flex;
+                justify-content: center;
+            }
+            .filtro-marca{
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+                border-bottom: 2px solid var(--cor-principal);
+                padding-bottom: 10px;
+            }
+            #filtrar-marca{
+                background-color: var(--cor-principal);
+                width: fit-content;
+                border-radius: 10px;
+                width: 100px;
+                align-self: center;
+                margin-top: 30px; 
+                height: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                gap: 20px;
+                padding: 10px;
+            }
+            .inpu_label{
+                display: flex;
+                gap: 10px;
+            }
+            
+            .butAdd{
+                background-color: var(--cor-principal);
+                padding: 10px;
+                border-radius: 10px;
+                
+            }

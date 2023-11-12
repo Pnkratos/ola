@@ -1,0 +1,125 @@
+.principal {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    margin-top: 90px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    z-index: -10;
+}
+
+.dadosPessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.luginputPessoal {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.inputPessoal {
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(255, 166, 0);
+    border-radius: 3px;
+}
+
+
+
+.inputCartao {
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(255, 166, 0);
+    border-radius: 3px;
+    width: 25svw;
+}
+
+.lugInputCartao {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagamentoEntrega {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.c2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+.c2 .inputCartao {
+    width: 10vw;
+}
+
+#carNoFinal {
+    height: 50vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerPR {
+display: flex;
+width: 90%;
+height: 200px;
+align-items: center;
+background-color: rgba(128, 128, 128, 0.24);
+}
+
+
+
+
+.box-quant {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.marca{
+}
+.quantidade{
+    color: orange;
+}
+.preco{
+}
+
+.lataLixo{
+    justify-self: right;
+}
+
+
+.ConfirmarPagamento{
+    position: fixed;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid orange;
+    width: 80%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 20%;
+}
+#btnConfirmarPagamento{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
