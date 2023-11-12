@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="Assets/Style/smartphones.css">
+    <link rel="stylesheet" href="Assets/Style/FinalCompra.css">
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <body><header id="topo">
+        <nav>
+        <a href="index.html"><img src="Assets/Logo.png" height="50vh" alt=""></a>
+
+
+        <div class="bape">
+        <button class="menuHamburger" id="hamburger">
+            <span class="colHamburger"></span>
+            <span class="colHamburger"></span>
+            <span class="colHamburger" style="margin-bottom: 0;"></span>
+        </button>
+<div class="barraPesquisa">
+    <input type="text" id="inputSearch" placeholder="Iphone 13">
+    <button id="butPesquisar"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+
+</div>
+
+    </div>
+
+
+
+
+
+        <div class="pessoal">
+            <button id="btnApareceProfile" style="cursor: pointer;"><img src="Assets/botoes/person.svg" alt=""></button>
+        </div>
+    </nav>
+    </header>
+
+
+
+    <!--Aqui é o menuLinks-->
+    <div class="menuLinks" id="menuLinks">
+
+        <div class="menuLinkTopo">
+            <img src="Assets/Logo.png" style="height: 10vh;" alt="">
+            <button id="btnFecharMenu" style="cursor: pointer;"><img
+                    src="Assets/botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div>
+
+
+        <div class="links">
+            <a href="informatica.html">Informatica</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="eletrodomestico.html">Eletrodoméstico</a>
+            <a href="Tv.html">Smart Tvs</a>
+        </div>
+
+
+
+        <a href="" class="cadastro">Não tem cadastro? <span style="color: orange;">clique aqui!</span></a>
+
+    </div>
+
+    <!--Aqui está o menu do Perfil-->
+    <div class="menuProfile" id="menuDesaparecido">
+
+        <div class="topoMenuProfile">
+            <img src="Assets/Logo.png" style="height: 10vh;" alt="" srcset="">
+            <button style="margin-top: 20px; cursor: pointer;" id="btnFecharMenuProfile"><img
+                    src="Assets/botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div>
+
+        <div class="dadosMenuProfile">
+            <label for="email">Email</label>
+            <input type="email" name="inputProfile" id="email" class="inputMenuProfile">
+            <label for="senha">Senha</label>
+            <input type="password" name="inputProfile" id="senha" class="inputMenuProfile">
+        </div>
+
+        <div class="botoesMenuProfile">
+            <button id="loginMenuProfile">Entrar</button><br>
+            <a href="cadastro.html" style="text-decoration: none;color: white; margin-bottom: 20px;">Não tem Login <span style="color: orange;">Cadastre-se</span> </a>
+        </div>
+    </div>
+
+
+        <div class="passo-a-passo">
+
+        </div>
+
+        <form class="principal">
+            <div class="dadosPessoais">
+                <h3>Dados Pessoais</h3>
+                <div class="luginputPessoal">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="João" class="inputPessoal">
+                </div>
+
+                <div class="luginputPessoal">
+                    <label for="emailF">Email</label>
+                    <input type="email" id="emailF" placeholder="example@gmail.com" class="inputPessoal">
+                </div>
+
+                <div class="luginputPessoal">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" placeholder="(11) 99999-9999" class="inputPessoal">
+                </div>
+            </div>
+
+            <div class="pagamentoEntrega">
+                <h3>Pagamento e Entrega</h3>
+                <div class="lugInputCartao">
+                    <label for="numC">Número do Cartão</label>
+                    <input type="number" id="numC" class="inputCartao" placeholder="1111 1111 1111 1111">
+                </div>
+                <div class="lugInputCartao c2">
+                    <div class="lugInputCartao">
+                        <label for="cvv">CVV</label>
+                        <input type="number" id="cvv" class="inputCartao" placeholder="123">
+                    </div>
+
+                    <div class="lugInputCartao">
+                        <label for="DataV">Data de Validade</label>
+                        <input type="text" id="DataV" class="inputCartao" placeholder="12/29">
+                    </div>
+                </div>
+                <div class="lugInputCartao">
+                    <label for="CEP">CEP</label>
+                    <input type="text" id="CEP" class="inputCartao" placeholder="11122-333">
+                </div>
+                <div class="lugInputCartao">
+                    <label for="ENDE">Endereço</label>
+                    <input type="text" id="ENDE" class="inputCartao" placeholder="Avenida Paulista">
+                </div>
+                <div class="lugInputCartao c2">
+                    <div class="lugInputCartao">
+                        <label for="NumC">Número</label>
+                        <input type="text" id="NumC" class="inputCartao" placeholder="200">
+                    </div>
+                    <div class="lugInputCartao">
+                        <label for="Compl">Complemento</label>
+                        <input type="text" id="Compl" class="inputCartao" placeholder="Casa 1">
+                    </div>
+                </div>
+            </div>
+
+            <article id="carNoFinal">
+
+
+            
+            </article>
+        </form>
+
+        <div class="ConfirmarPagamento">
+            <p class="total" id="total"></p>
+            <button id="btnConfirmarPagamento">Confirmar Pagamento</button>
+        
+        </div>
+    </body>
+    <script type="module" src="./Assets/Script/FinalCompra.js"></script>
+
+</html>
